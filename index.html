@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Casey Whalen | Product & Strategy</title>
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts: Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet" />
+    
+    <!-- Custom Tailwind Configuration -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                    colors: {
+                        'brand-dark': '#111827',
+                        'brand-gray': '#4B5563',
+                        'brand-light-gray': '#F3F4F6',
+                        'brand-accent': '#38BDF8',
+                        'brand-accent-hover': '#0EA5E9',
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        /* Simple body style for a smooth background transition */
+        body {
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+    </style>
+</head>
+<body class="bg-brand-light-gray text-brand-dark">
+
+    <!-- Main Content Container -->
+    <main class="container mx-auto max-w-3xl p-6 md:p-12 font-sans">
+
+        <!-- Introduction Section -->
+        <section class="text-center mb-12">
+            <h1 class="text-4xl md:text-5xl font-bold text-brand-dark mb-3">Casey Whalen</h1>
+            <p class="text-lg md:text-xl text-brand-gray mb-6">
+                Building scalable systems, growing businesses, and driving operational excellence.
+            </p>
+            <!-- Social & Resume Links -->
+            <div class="flex justify-center items-center space-x-4 md:space-x-5 mb-8">
+                <a href="https://www.linkedin.com/in/caseywhalen14/" target="_blank" rel="noopener noreferrer" class="text-brand-gray hover:text-brand-accent transition-colors duration-300 font-medium">LinkedIn</a>
+                <span class="text-gray-300">|</span>
+                <a href="https://x.com/thecaseywhalen" target="_blank" rel="noopener noreferrer" class="text-brand-gray hover:text-brand-accent transition-colors duration-300 font-medium">X / Twitter</a>
+                <span class="text-gray-300">|</span>
+                <a href="https://drive.google.com/file/d/1kLJKHINtaoKUF-mR-_EBcyKj8mARGbCO/view?usp=sharing" target="_blank" rel="noopener noreferrer" class="text-brand-gray hover:text-brand-accent transition-colors duration-300 font-medium">Resume</a>
+            </div>
+            <!-- Profile Photo -->
+            <div class="w-32 h-32 rounded-full mx-auto shadow-lg overflow-hidden bg-brand-light-gray flex items-center justify-center">
+                <img src="cropped.png" alt="Casey Whalen profile photo" class="w-full h-full object-cover object-[center_10%]"
+                onerror="this.onerror=null; this.src='https://placehold.co/128x128/f3f4f6/4b5563?text=CW';">
+            </div>
+        </section>
+
+        <!-- Card Container for Bio and Work -->
+        <div class="bg-white rounded-xl shadow-sm p-8 md:p-10">
+            
+            <!-- About Section -->
+            <section class="mb-10">
+                <h2 class="text-2xl font-bold text-brand-dark border-b border-gray-200 pb-3 mb-4">About</h2>
+                <p class="text-brand-gray leading-relaxed">
+                    I'm a product leader and business strategist with a track record of optimizing systems, eliminating bottlenecks, and scaling sustainable growth. I’ve led global teams, shipped solutions across complex organizations, and aligned operations with data-backed strategies. My focus: helping teams move faster, smarter, and more effectively.
+                </p>
+            </section>
+
+            <!-- Work Highlights Section -->
+            <section>
+                <h2 class="text-2xl font-bold text-brand-dark border-b border-gray-200 pb-3 mb-5">Work Highlights</h2>
+                <div class="space-y-8">
+                    <!-- Work Item 1 -->
+                    <div>
+                        <h3 class="font-semibold text-lg text-brand-dark">(Current) Head of Product Quality – Paradigm</h3>
+                        <p class="text-brand-gray mt-1">Led global quality operations and built product feedback systems to drive improvements across engineering, sales, and client experience.</p>
+                    </div>
+                    <!-- Work Item 2 -->
+                    <div>
+                        <h3 class="font-semibold text-lg text-brand-dark">(Current) Founder - <a href="http://www.praetere.com" target="_blank" rel="noopener noreferrer" class="text-brand-accent hover:text-brand-accent-hover underline">praetere</a></h3>
+                        <p class="text-brand-gray mt-1">A platform for high performers who want to take initiative and build systems for personal growth. Tools, guides, and digital products to help you think better and act with intention.</p>
+                    </div>
+                    <!-- Work Item 3 -->
+                    <div>
+                        <h3 class="font-semibold text-lg text-brand-dark">(Former) Manager, Solutions Delivery – Solidifi</h3>
+                        <p class="text-brand-gray mt-1">Oversaw cross-functional teams and delivered enterprise programs while building tools that streamlined support, onboarding, and internal operations.</p>
+                    </div>
+                    <!-- Work Item 4 -->
+                    <div>
+                        <h3 class="font-semibold text-lg text-brand-dark">(Former) Data Analyst – Solidifi</h3>
+                        <p class="text-brand-gray mt-1">Created dashboards and delivered insights that improved onboarding, team performance, and decision-making across multiple business units.</p>
+                    </div>
+                    <!-- Work Item 5 -->
+                    <div>
+                        <h3 class="font-semibold text-lg text-brand-dark">(Former) Supply Chain Analyst – Key Auto Group</h3>
+                        <p class="text-brand-gray mt-1">Optimized pricing strategies and automated reporting tools to support sales operations, wholesale strategy, and inventory planning.</p>
+                    </div>
+                </div>
+            </section>
+
+        </div>
+
+        <!-- Footer Section -->
+        <footer class="text-center mt-12">
+            <p class="text-sm text-gray-500">© 2025 Casey Whalen. All rights reserved.</p>
+        </footer>
+
+    </main>
+</body>
+</html>
